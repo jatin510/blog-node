@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/run.js",
+  "scripts": {
+    "start": "node src/run.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-hbs": "^2.1.2",
+    "hbs": "^4.0.4",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.7.4"
+  },
+  "devDependencies": {
+    "debug": "^4.1.1",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0"
+  }
+}
