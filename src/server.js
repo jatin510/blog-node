@@ -10,9 +10,8 @@ app.use(express.urlencoded({
 }))
 
 
-app.get('/', (req, res) => {
-   res.send('hello')
-})
+app.use('/', require('./routes/pages'))
+app.use('/api', require('./routes/api'))
 
 module.exports = {
    app

@@ -16,7 +16,7 @@ async function createArticle(title, contents, authorId) {
    }
 
    try {
-      await Article.create({
+      return await Article.create({
          title,
          content,
          authorId
@@ -32,8 +32,8 @@ async function createArticle(title, contents, authorId) {
 async function fetchArticles() {
 
    try {
-      const articles = await Article.findAll()
-      return articles
+      return await Article.findAll()
+
    } catch (e) {
       console.log(e)
       throw e
